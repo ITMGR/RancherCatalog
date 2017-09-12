@@ -1,0 +1,26 @@
+.catalog:
+  name: N2N
+  version: 1.1
+  description: |
+    N2N
+  minimum_rancher_version: v0.56.0
+  maintainer: "stefan@gmail.com"
+  uuid: gitlab-0
+  questions:
+    - variable: "gitlab_hostname"
+      description: "Gitlab hostname (without uri scheme http:// or https://)"
+      label: "Hostname:"
+      required: true
+      default: "git.example.com"
+      type: "string"
+    - variable: "edge_ip"
+      description: ""
+      label: "Edge IP"
+      required: true
+      default: "88.86.108.50:83"
+      type: "string"
+version: '2'
+services:
+  n2nEdge:
+    scale: 1
+    start_on_create: true

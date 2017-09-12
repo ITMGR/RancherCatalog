@@ -1,0 +1,21 @@
+version: '2'
+services:
+  n2nEdge:
+    image: pahud/n2n-docker
+    stdin_open: true
+    tty: true
+    command:
+    - edge
+    - -d
+    - n2n0
+    - -a
+    - 10.9.9.1
+    - -c
+    - mypbxnet
+    - -k
+    - mypass
+    - -l
+    - ${edge_ip}
+    - -f
+    labels:
+      io.rancher.container.pull_image: always
