@@ -9,9 +9,9 @@
   questions:
     - variable: "vm_ip"
       description: ""
-      label: "Edge IP"
+      label: "IP address client"
       required: true
-      default: "88.86.108.50:83"
+      default: "10.10.10.1"
       type: "string"
     - variable: "edge_ip"
       description: ""
@@ -21,15 +21,15 @@
       type: "string"
     - variable: "network"
       description: ""
-      label: "Edge IP"
+      label: "N2N network name
       required: true
-      default: "88.86.108.50:83"
+      default: "MyNetwork"
       type: "string"
     - variable: "password"
       description: ""
-      label: "Edge IP"
+      label: "password"
       required: true
-      default: "88.86.108.50:83"
+      default: "pass123"
       type: "string"
 version: '2'
 services:
