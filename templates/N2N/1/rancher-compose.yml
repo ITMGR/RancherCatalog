@@ -7,12 +7,6 @@
   maintainer: "stefan@gmail.com"
   uuid: gitlab-0
   questions:
-    - variable: "gitlab_hostname"
-      description: "Gitlab hostname (without uri scheme http:// or https://)"
-      label: "Hostname:"
-      required: true
-      default: "git.example.com"
-      type: "string"
     - variable: "edge_ip"
       description: ""
       label: "Edge IP"
