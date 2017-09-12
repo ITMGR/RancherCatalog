@@ -1,0 +1,38 @@
+.catalog:
+  name: N2N
+  version: 1.2
+  description: |
+    N2N
+  minimum_rancher_version: v0.56.0
+  maintainer: "stefan@gmail.com"
+  uuid: gitlab-0
+  questions:
+    - variable: "vm_ip"
+      description: ""
+      label: "Edge IP"
+      required: true
+      default: "88.86.108.50:83"
+      type: "string"
+    - variable: "edge_ip"
+      description: ""
+      label: "Edge IP"
+      required: true
+      default: "88.86.108.50:83"
+      type: "string"
+    - variable: "network"
+      description: ""
+      label: "Edge IP"
+      required: true
+      default: "88.86.108.50:83"
+      type: "string"
+    - variable: "password"
+      description: ""
+      label: "Edge IP"
+      required: true
+      default: "88.86.108.50:83"
+      type: "string"
+version: '2'
+services:
+  n2nEdge:
+    scale: 1
+    start_on_create: true
