@@ -9,11 +9,11 @@ services:
     - -d
     - n2n0
     - -a
-    - 10.9.9.1
+    - ${vm_ip}
     - -c
-    - mypbxnet
+    - ${network}
     - -k
-    - mypass
+    - ${password}
     - -l
     - ${edge_ip}
     - -f

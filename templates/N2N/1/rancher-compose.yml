@@ -7,7 +7,25 @@
   maintainer: "stefan@gmail.com"
   uuid: gitlab-0
   questions:
+    - variable: "vm_ip"
+      description: ""
+      label: "Edge IP"
+      required: true
+      default: "88.86.108.50:83"
+      type: "string"
     - variable: "edge_ip"
+      description: ""
+      label: "Edge IP"
+      required: true
+      default: "88.86.108.50:83"
+      type: "string"
+    - variable: "network"
+      description: ""
+      label: "Edge IP"
+      required: true
+      default: "88.86.108.50:83"
+      type: "string"
+    - variable: "password"
       description: ""
       label: "Edge IP"
       required: true
